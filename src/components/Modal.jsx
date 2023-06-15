@@ -28,11 +28,11 @@ const Modal = () => {
   return (
     <dialog className="modal-container" ref={modalRef}>
       <div className="modal">
-        <h4>Remove all items from your cart?</h4>
+        <h4>Do you want to remove all items from your cart?</h4>
         <div className="btn-container">
           <button
             type="button"
-            className="btn clear-btn"
+            className="btn clear"
             onClick={() => {
               dispatch(toggleModal());
               dispatch(clearCart());
@@ -42,7 +42,7 @@ const Modal = () => {
           </button>
           <button
             type="button"
-            className="btn cancel-btn"
+            className="btn cancel"
             onClick={() => dispatch(toggleModal())}
           >
             Cancel
